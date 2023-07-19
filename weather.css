@@ -1,0 +1,187 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#body {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+#app {
+    min-height: 98vh;
+}
+#weather-form {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    align-content: center;
+}
+#weather-input {
+border: none;
+border-radius: 2px;
+font-size: 20px;
+}
+#button {
+border: none;
+border-radius: 2px;
+font-size: 20px;
+}
+#main-display {
+    display: flex;
+    flex-direction: column;
+    color: rgb(86, 86, 199);
+}
+#location-and-logo{
+    text-align: center;
+    margin-bottom: 9%;
+}
+#temperature-and-extras {
+    display: flex;
+    justify-content:space-around;
+}
+#temperature {
+    font-size: 6rem;
+}
+#extrainfo-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+#imagen {
+    margin-top: 5%;
+    width: 80%;
+}
+#footer {
+background-color: rgb(39, 39, 80);
+color: white;
+width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    #location-and-logo{
+        margin-bottom: 2%;
+    }
+    #extrainfo-display {
+        font-size: 2em;
+    }
+    #temperature-and-extras {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2%;
+        /* Esto de arriba se desestructura la página */
+    }
+}
+@media screen and (min-width: 768px) {
+    #weather-input {
+        width: 50vw;
+        height: 3vh;
+    }
+    #imagen {
+        height: 400px;
+        width: auto;
+        margin: 0;
+    }
+    #location-and-logo{
+        font-size: 3em;
+    }
+    #temperature-and-extras {
+        display: flex;
+        flex-direction: column;
+    }
+    #extrainfo-display {
+        font-size: 2.5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #temperature {
+        font-size: 8em;
+        text-align: center;
+    }
+
+}
+@media screen and (min-width: 912px) {
+    #weather-input {
+        width: 50vw;
+        height: 3vh;
+    }
+
+    #location-and-logo{
+        font-size: 3em;
+        margin:2%  !important;
+        padding: 0;
+    }
+    #extrainfo-display {
+        font-size: 3em;
+    }
+    #temperature {
+        font-size: 9em;
+        text-align: center;
+        padding: 3% 0%;
+    }
+    #location-and-logo{
+        text-align: center;
+        margin-top: 9%;
+    }
+    #temperature-and-extras {
+        display: flex;
+        flex-direction: column;
+    }
+    #extrainfo-display {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
+@media screen and (min-width: 1024px) {
+    #imagen {
+        width: auto;
+        height: 18rem;
+        margin: 0;
+    }
+    #temperature {
+        text-align: center;
+    }
+    #temperature-and-extras {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #extrainfo-display {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 2em;
+    }
+    #location-and-logo{
+        text-align: center;
+        margin: 0;
+    }
+}
+@media screen and (min-width: 1248px) {
+    #imagen {
+        width: auto;
+        height: 18rem;
+        margin: 0;
+    }
+    #temperature-and-extras {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #extrainfo-display {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 2em;
+    }
+    #temperature {
+        padding: 0;
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" href="weather.css">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div id='app'>
+
+        <form id="weather-form" class="initial-weather-form" autocomplete="off">
+            <input id='weather-input' type="text" placeholder="Introduzca su ciudad...">
+            <button id='button' type="submit">Buscar</button>
+        </form>
+
+        <div id='main-display'>
+            <div id='location-and-logo'>
+                <h1 id="location-display"></h1>
+                <img id='imagen' alt="logo-tiempo">
+            </div>
+
+            <div id="temperature-and-extras">
+                <div id="temperature"></div>
+                <div id="extrainfo-display">
+                    <div id="humedad"></div>
+                    <div id="condicion"></div>
+                    <div id="viento"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <footer id="footer">
+            Antonio Luque Lao
+        </footer>
+    <script src="weather.js"></script>
+</body>
+</html>
